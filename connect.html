@@ -1,0 +1,39 @@
+<!doctype html>
+<head>
+  <title>Connect 4</title>
+  <link href="connect.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+  <label for="number-select">Number of Players</label>
+
+  <select id="number-select">
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+  </select>
+      <form id="players" action="#">
+        <div>
+          <label for="player1">Player 1 Color:</label>
+          <input type="text" name="player1" id="player1" value="Red" style="background-color: Red">
+        </div>
+        <div>
+          <label for="player2">Player 2 Color:</label>
+          <input type="text" name="player2" id="player2" value="Blue" style="background-color: Blue">
+        </div>
+  </form>
+  <button id="new-game">Start the game</button>
+
+  <div id="game">
+    <table id="board"></table>
+  </div>
+</div>
+<script src="connect.js"></script>
+
+</body>
+</html>
